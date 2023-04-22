@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Contest 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <p>Filter ui cards via their profession.</p>
+            <select name="profession"  id="select1">
+                <option selected disabled>Profession</option>
+                <option value="developer">developer</option>
+                <option value="admin">admin</option>
+            </select>
+            <ul id="list">
+                
+            </ul>
+           <button id="filter-btn" onclick="filterEmp(empArray)">Filter</button>
+        </div>
+        <div class="bottom">
+            <p>Add a new user</p>
+            
+                <div class="form-input">
+                    <div>
+                        <label for="name">Enter Name</label>
+                        <input type="text" name="name" id="name"> 
+                    </div>
+                    <div>
+                        <label for="profession">Enter Profesiion</label>
+                        <input type="text" name="profession" id="profession"> 
+                    </div>
+                    <div>
+                        <label for="name">Enter Age</label>
+                        <input type="number" name="age" id="age"> 
+                    </div>
+                </div>
+                <button id="add-user" onclick="addUser()">Add User</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
